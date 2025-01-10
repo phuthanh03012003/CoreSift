@@ -1,5 +1,5 @@
-transformers==4.34.0  # Phiên bản của thư viện transformers
-torch>=1.10.0        # PyTorch cho hỗ trợ mô hình
+transformers==4.34.0
+torch==2.0.1
+sentencepiece==0.1.99
 
-
-# pip install -r requirements.txt
+!pip install -r requirements.txt

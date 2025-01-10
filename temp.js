@@ -1,1 +1,0 @@
-var extension = 0;
