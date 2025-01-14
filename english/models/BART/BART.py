@@ -7,7 +7,7 @@ model_name = "facebook/bart-large-cnn"
 tokenizer = BartTokenizer.from_pretrained(model_name)
 model = BartForConditionalGeneration.from_pretrained(model_name)
 
-input_file = "../inputs/TamCam.txt"
+input_file = "../../inputs/TamCam.txt"
 with open(input_file, "r") as f:      
     raw_text = f.read().strip()
 
@@ -38,7 +38,7 @@ formatted_summary = re.sub(r'([.!?])\s', r'\1\n', summary)
 # In kết quả ra màn hình
 print("📄 Kết quả tóm tắt:\n", formatted_summary)
 
-output_file = "../outputs/BART-large-CNN.txt"
+output_file = "../../outputs/BART-large-CNN.txt"
 os.makedirs(os.path.dirname(output_file), exist_ok=True)
 with open(output_file, "w") as f:
     f.write(formatted_summary)
