@@ -1,9 +1,12 @@
 import unicodedata
 import re
-from transformers import AutoTokenizer
+import torch
+from transformers import BartForConditionalGeneration, BartTokenizer
 
-# Tải tokenizer của mô hình BART-large-CNN
-tokenizer = AutoTokenizer.from_pretrained("facebook/bart-large-cnn")
+# Load model và tokenizer
+model_name = "facebook/bart-large-cnn"
+tokenizer = BartTokenizer.from_pretrained(model_name)
+model = BartForConditionalGeneration.from_pretrained(model_name)
 
 # Hàm làm sạch văn bản
 def clean_text(text):
@@ -42,3 +45,8 @@ print("\n\n")
 # Hiển thị Attention Mask
 print("4. Attention Mask:")
 print(inputs["attention_mask"])
+
+# Lưu kết quả để dùng cho modelProcessing.py
+torch.save(inputs, "object/processed_inputs.pt")
+print("Đã lưu tensor Input IDs vào file processed_inputs.pt")
+
