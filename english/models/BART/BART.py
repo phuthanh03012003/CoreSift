@@ -36,7 +36,7 @@ summary = tokenizer.decode(summary_ids[0], skip_special_tokens=True)
 formatted_summary = re.sub(r'([.!?])\s', r'\1\n', summary)
 
 # In kết quả ra màn hình
-print("📄 Kết quả tóm tắt:\n", formatted_summary)
+print("Kết quả tóm tắt:\n", formatted_summary)
 
 output_file = "../../outputs/BART-large-CNN.txt"
 os.makedirs(os.path.dirname(output_file), exist_ok=True)
