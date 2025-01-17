@@ -49,7 +49,7 @@ class Evaluation:
         print(f"🔹 ROUGE-L: {rouge_scores['rougeL'].fmeasure:.4f}")
 
         # In văn bản sau khi sửa ngữ pháp
-        print("\n🛠️ Văn bản sau khi sửa ngữ pháp:")
+        print("\nVăn bản sau khi sửa ngữ pháp:")
         print(corrected_text)
         print("=" * 80)
 

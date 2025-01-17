@@ -27,6 +27,11 @@ class DecoderLayer:
             dtype=torch.long
         )
 
+        print("Batch size:", batch_size)
+        print("Decoder input IDs shape:", decoder_input_ids.shape)
+        print("Encoder hidden states shape:", self.encoder_hidden_states.last_hidden_state.shape)
+        print("Attention mask shape:", self.attention_mask.shape)
+
         # Thực hiện decoding mặc định
         with torch.no_grad():
             generated_ids = self.model.generate(
@@ -38,6 +43,8 @@ class DecoderLayer:
 
         print("\n Kết quả từ Decoder Layer (MẶC ĐỊNH):")
         print(generated_ids)
+        print("Generated IDs shape:", generated_ids.shape)  # Kết quả phải là (3, sequence_length)
+
 
         self.save_decoder_outputs(save_path, decoder_input_ids)
 

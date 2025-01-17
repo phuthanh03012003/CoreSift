@@ -32,7 +32,7 @@ summary_ids = model.generate(
 # Giải mã kết quả tóm tắt
 summary = tokenizer.decode(summary_ids[0], skip_special_tokens=True)
 
-# ✅ Xử lý xuống dòng sau mỗi câu
+# Xử lý xuống dòng sau mỗi câu
 formatted_summary = re.sub(r'([.!?])\s', r'\1\n', summary)
 
 # In kết quả ra màn hình

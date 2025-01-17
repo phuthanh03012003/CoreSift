@@ -60,7 +60,9 @@ class TextGeneration:
             "input_ids": self.decoder_input_ids,
             "encoder_outputs": self.encoder_outputs,
             "attention_mask": self.attention_mask,
-            "max_length": 256
+            "max_length": 256,
+            "min_length": 64,
+            "length_penalty": 2.0,
         }
 
         file_name = "../object/TextGeneration/generated_"

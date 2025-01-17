@@ -17,7 +17,7 @@ def clean_text(text):
     return text
 
 # Đọc file với mã hóa UTF-8
-input_file = "../../inputs/TamCam.txt"
+input_file = "../../../inputs/TamCam.txt"
 with open(input_file, "r", encoding="utf-8") as f:
     raw_text = f.read().strip().split("\n\n")
 

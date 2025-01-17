@@ -1,6 +1,6 @@
 import torch
 from transformers import BartTokenizer
-
+import re
 class PostProcessing:
     def __init__(self, model_name="facebook/bart-large-cnn"):
         # Tải tokenizer để giải mã token thành văn bản
@@ -19,9 +19,17 @@ class PostProcessing:
         return decoded_text
 
     def clean_text(self, text):
-        # Làm sạch văn bản: loại bỏ khoảng trắng thừa, ký tự đặc biệt...
-        cleaned_text = text.strip().replace("\n", " ").replace("  ", " ")
-        return cleaned_text
+        # 1️ Thay thế <n> hoặc </n> bằng dấu xuống dòng
+        text = text.replace("<n>", "\n").replace("</n>", "\n")
+
+        # 2️ Tự động xuống dòng sau dấu chấm, dấu hỏi, dấu chấm than
+        text = re.sub(r'([.!?])\s+', r'\1\n', text)
+
+        # 3️ Xóa khoảng trắng thừa và ký tự đặc biệt
+        text = text.strip().replace("  ", " ")
+
+        return text
+
 
     def save_final_output(self, text, save_path):
         # Lưu văn bản cuối cùng ra file
@@ -37,7 +45,7 @@ class PostProcessing:
         self.save_final_output(cleaned_text, save_path)
 
         # In kết quả ra màn hình
-        print(f"\n📖 {strategy_name}:")
+        print(f"\n{strategy_name}:")
         print(cleaned_text)
         print("=" * 80)
 
