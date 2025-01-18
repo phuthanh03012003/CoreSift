@@ -33,11 +33,11 @@ summary_ids = model.generate(
 # Giải mã kết quả tóm tắt
 summary = tokenizer.decode(summary_ids[0], skip_special_tokens=True)
 
-# ✅ Xử lý xuống dòng sau mỗi câu
+# Xử lý xuống dòng sau mỗi câu
 formatted_summary = re.sub(r'([.!?])\s', r'\1\n', summary)
 
 # In kết quả ra màn hình
-print("📄 Kết quả tóm tắt:\n", formatted_summary)
+print("Kết quả tóm tắt:\n", formatted_summary)
 
 # Ghi kết quả vào file (KHÔNG dùng encoding="utf-8")
 output_file = "../outputs/BigBird-pegasus-large-arxiv.txt"
@@ -45,4 +45,4 @@ os.makedirs(os.path.dirname(output_file), exist_ok=True)
 with open(output_file, "w") as f:
     f.write(formatted_summary)
 
-print(f"📂 Kết quả đã được ghi vào file: {output_file}")
+print(f"Kết quả đã được ghi vào file: {output_file}")

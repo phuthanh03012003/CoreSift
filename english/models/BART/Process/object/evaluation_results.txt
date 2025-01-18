@@ -1,0 +1,71 @@
+**TỔNG HỢP KẾT QUẢ ĐÁNH GIÁ**
+================================================================================
+
+**Đánh giá văn bản (1️. Mặc định (Beam Search)):**
+🔹 BLEU Score: 0.0476
+🔹 ROUGE-1: 0.4067
+🔹 ROUGE-2: 0.3960
+🔹 ROUGE-L: 0.4067
+
+**Văn bản sau khi sửa ngữ pháp:**
+Am was a kind and beautiful girl who lost her mother at a young age.
+The lived with her cruel stepmother and her half-sister, Am.
+They forced her to do all the hard work and treated her unfairly.
+Despite her hardships, Am remained kind-hearted and resident.
+Each time Am suffered, the Buddha would appear to comfort and help her.
+================================================================================
+
+**Đánh giá văn bản (2️. Greedy Search):**
+🔹 BLEU Score: 0.0327
+🔹 ROUGE-1: 0.3716
+🔹 ROUGE-2: 0.3469
+🔹 ROUGE-L: 0.3649
+
+**Văn bản sau khi sửa ngữ pháp:**
+Am was a kind and beautiful girl who lost her mother at a young age.
+The lived with her cruel stepmother and her half-sister, Am.
+Despite her hardships, Am remained kind-hearted and resident.
+Each time Am suffered, the Buddha would appear to comfort and help her.
+The Buddha would give her the strength to endure.
+================================================================================
+
+**Đánh giá văn bản (3️. Beam Search (num_beams=1)):**
+🔹 BLEU Score: 0.0327
+🔹 ROUGE-1: 0.3716
+🔹 ROUGE-2: 0.3469
+🔹 ROUGE-L: 0.3649
+
+**Văn bản sau khi sửa ngữ pháp:**
+Am was a kind and beautiful girl who lost her mother at a young age.
+The lived with her cruel stepmother and her half-sister, Am.
+Despite her hardships, Am remained kind-hearted and resident.
+Each time Am suffered, the Buddha would appear to comfort and help her.
+The Buddha would give her the strength to endure.
+================================================================================
+
+**Đánh giá văn bản (4️. Top-k Sampling):**
+🔹 BLEU Score: 0.0476
+🔹 ROUGE-1: 0.4067
+🔹 ROUGE-2: 0.3960
+🔹 ROUGE-L: 0.4067
+
+**Văn bản sau khi sửa ngữ pháp:**
+Am was a kind and beautiful girl who lost her mother at a young age.
+The lived with her cruel stepmother and her half-sister, Am.
+They forced her to do all the hard work and treated her unfairly.
+Despite her hardships, Am remained kind-hearted and resident.
+Each time Am suffered, the Buddha would appear to comfort and help her.
+================================================================================
+
+**Đánh giá văn bản (5️. Top-p Sampling):**
+🔹 BLEU Score: 0.0293
+🔹 ROUGE-1: 0.3686
+🔹 ROUGE-2: 0.3574
+🔹 ROUGE-L: 0.3686
+
+**Văn bản sau khi sửa ngữ pháp:**
+Am was a kind and beautiful girl who lost her mother at a young age.
+The lived with her cruel stepmother and her half-sister, Am.
+Despite her hardships, Am remained kind-hearted and resident.
+Each time Am suffered, the Buddha would appear to comfort and help her, giving her the strength to endure.
+================================================================================

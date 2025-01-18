@@ -1,0 +1,60 @@
+**TỔNG HỢP KẾT QUẢ ĐÁNH GIÁ**
+================================================================================
+
+**Đánh giá văn bản (1️. Mặc định (Beam Search)):**
+🔹 BLEU Score: 0.0316
+🔹 ROUGE-1: 0.3490
+🔹 ROUGE-2: 0.2770
+🔹 ROUGE-L: 0.2483
+
+**Văn bản sau khi sửa ngữ pháp:**
+Am was constantly mistreated by her stepmother and half-sister, Am .
+Each time Am suffered, the Buddha would appear to comfort and help her, giving her the strength to endure .
+Am’s story is told through the eyes of a young girl who lost her mother at a young age and lived with her cruel stepmother and half-sister .
+================================================================================
+
+**Đánh giá văn bản (2️. Greedy Search):**
+🔹 BLEU Score: 0.0016
+🔹 ROUGE-1: 0.2353
+🔹 ROUGE-2: 0.1926
+🔹 ROUGE-L: 0.1838
+
+**Văn bản sau khi sửa ngữ pháp:**
+Am was constantly mistreated by her stepmother and half-sister .
+Each time Am suffered, the Buddha would appear to comfort and help her .
+Am's mother died when she was a young age .
+================================================================================
+
+**Đánh giá văn bản (3️. Beam Search (num_beams=1)):**
+🔹 BLEU Score: 0.0016
+🔹 ROUGE-1: 0.2353
+🔹 ROUGE-2: 0.1926
+🔹 ROUGE-L: 0.1838
+
+**Văn bản sau khi sửa ngữ pháp:**
+Am was constantly mistreated by her stepmother and half-sister .
+Each time Am suffered, the Buddha would appear to comfort and help her .
+Am's mother died when she was a young age .
+================================================================================
+
+**Đánh giá văn bản (4️. Top-k Sampling):**
+🔹 BLEU Score: 0.0011
+🔹 ROUGE-1: 0.2230
+🔹 ROUGE-2: 0.2022
+🔹 ROUGE-L: 0.2082
+
+**Văn bản sau khi sửa ngữ pháp:**
+Am was constantly mistreated by her stepmother and half-sister, Am .
+Each time Am suffered, the Buddha would appear to comfort and help her, giving her the strength to endure .
+================================================================================
+
+**Đánh giá văn bản (5️. Top-p Sampling):**
+🔹 BLEU Score: 0.0009
+🔹 ROUGE-1: 0.2230
+🔹 ROUGE-2: 0.2022
+🔹 ROUGE-L: 0.2082
+
+**Văn bản sau khi sửa ngữ pháp:**
+Am was constantly mistreated by her stepmother and half-sister, Am.
+Each time Am suffered, the Buddha would appear to comfort and help her, giving her the strength to endure .
+================================================================================

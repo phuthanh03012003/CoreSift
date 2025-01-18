@@ -1,0 +1,68 @@
+**TỔNG HỢP KẾT QUẢ ĐÁNH GIÁ**
+================================================================================
+
+**Đánh giá văn bản (1️. Mặc định (Beam Search)):**
+🔹 **BLEU Score:** 0.0173
+🔹 **ROUGE-1:** 0.3345
+🔹 **ROUGE-2:** 0.3228
+🔹 **ROUGE-L:** 0.3345
+
+**Văn bản sau khi sửa ngữ pháp:**
+Am was a kind and beautiful girl who lost her mother at a young age .
+she lived with her cruel stepmother and her half-sister, can .
+despite her hardships, Am remained kind-hearted and resident .
+each time Am suffered, the Buddha would appear to comfort and help her .
+================================================================================
+
+**Đánh giá văn bản (2️. Greedy Search):**
+🔹 **BLEU Score:** 0.0173
+🔹 **ROUGE-1:** 0.3345
+🔹 **ROUGE-2:** 0.3228
+🔹 **ROUGE-L:** 0.3345
+
+**Văn bản sau khi sửa ngữ pháp:**
+Am was a kind and beautiful girl who lost her mother at a young age .
+she lived with her cruel stepmother and her half-sister, can .
+despite her hardships, Am remained kind-hearted and resident .
+each time Am suffered, the Buddha would appear to comfort and help her .
+================================================================================
+
+**Đánh giá văn bản (3️. Beam Search (num_beams=10)):**
+🔹 **BLEU Score:** 0.0173
+🔹 **ROUGE-1:** 0.3345
+🔹 **ROUGE-2:** 0.3228
+🔹 **ROUGE-L:** 0.3345
+
+**Văn bản sau khi sửa ngữ pháp:**
+Am was a kind and beautiful girl who lost her mother at a young age .
+she lived with her cruel stepmother and her half-sister, can .
+despite her hardships, Am remained kind-hearted and resident .
+each time Am suffered, the Buddha would appear to comfort and help her .
+================================================================================
+
+**Đánh giá văn bản (4️. Top-k Sampling):**
+🔹 **BLEU Score:** 0.0258
+🔹 **ROUGE-1:** 0.3455
+🔹 **ROUGE-2:** 0.2207
+🔹 **ROUGE-L:** 0.2259
+
+**Văn bản sau khi sửa ngữ pháp:**
+Buddha appeared to Am, giving her the strength to withstand hardship .
+Am was constantly mistreated by her stepmother and her half-sister, can .
+each time she suffered, the Buddha would appear to comfort and help her .
+she remained kind-hearted and resident .
+despite her hardships, despite her hatred and jealousy, the Buddha appeared to give her the strength she needed to endure.
+================================================================================
+
+**Đánh giá văn bản (5️. Top-p Sampling):**
+🔹 **BLEU Score:** 0.0282
+🔹 **ROUGE-1:** 0.3630
+🔹 **ROUGE-2:** 0.3448
+🔹 **ROUGE-L:** 0.3562
+
+**Văn bản sau khi sửa ngữ pháp:**
+Am was a kind and beautiful girl who lost her mother at a young age .
+she lived with her cruel stepmother and her half-sister, can .
+out of jealousy and hatred, she was constantly mistreated by her stepmother and can .
+each time Am suffered, the Buddha would appear to comfort and help her .
+================================================================================
