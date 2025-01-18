@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTMX Demo</title>
+  <script src="https://unpkg.com/htmx.org"></script>
+</head>
+<body>
+  <h1>HTMX Demo với Flask</h1>
+
+  <!-- Nút gọi API -->
+  <button 
+    hx-get="/example-endpoint" 
+    hx-target="#result" 
+    hx-swap="innerHTML">
+    Lấy dữ liệu
+  </button>
+
+  <!-- Vùng hiển thị kết quả -->
+  <div id="result">
+    Kết quả sẽ hiển thị tại đây...
+  </div>
+</body>
+</html>
