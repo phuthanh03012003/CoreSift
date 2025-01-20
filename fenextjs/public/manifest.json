@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "Next.js Chrome Extension",
+    "version": "1.0",
+    "description": "Test integration of Next.js with Chrome Extensions.",
+    "permissions": ["scripting", "activeTab"],
+    "action": {
+      "default_popup": "build/index.html",  
+      "default_icon": {
+        "16": "icons/icon16.png"
+      }
+    },
+    "icons": {
+      "16": "icons/icon16.png"
+    }
+  }
+  
