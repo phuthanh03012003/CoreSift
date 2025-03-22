@@ -7,7 +7,7 @@ model_name = "facebook/bart-large-cnn"
 tokenizer = BartTokenizer.from_pretrained(model_name)
 model = BartForConditionalGeneration.from_pretrained(model_name)
 
-input_file = "../../inputs/TamCam.txt"
+input_file = "../inputs/TamCam.txt"
 with open(input_file, "r") as f:      
     raw_text = f.read().strip()
 
